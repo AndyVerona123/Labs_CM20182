@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App Restaurant</string>
+    <string name="welcome">Bienvenue</string>
+    <string name="options">Entrez une option</string>
+    <string name="options_food">Entrez la nourriture</string>
+    <string name="upload_image">télécharger limage</string>
+    <string name="save_data">enregistrer des données</string>
+    <string name="day">Jour</string>
+</resources>
