@@ -15,156 +15,32 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp">
                     <TextView
-                        android:id="@+id/enter_food"
                         android:layout_width="139dp"
                         android:layout_height="30dp"
                         android:layout_centerVertical="true"
-                        android:text="@string/options_food"
+                        android:text="Name"
                         android:textColor="@color/black"
                         android:textSize="15dp"
                         android:textStyle="bold" />
                     <EditText
-                        android:id="@+id/food"
-                        android:inputType="textCapSentences|textNoSuggestions|textEmailAddress"
-                        android:hint="Ingrese el dato"
+                        android:id="@+id/name"
+                        android:layout_centerVertical="true"
                         android:layout_width="210dp"
                         android:layout_height="45dp"
-                        android:layout_alignParentRight="true" />
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp">
-                    <TextView
-                        android:id="@+id/enter_schedule"
-                        android:layout_width="139dp"
-                        android:layout_height="30dp"
-                        android:layout_centerVertical="true"
-                        android:text="Ingre el horario"
-                        android:textColor="@color/black"
-                        android:textSize="15dp"
-                        android:textStyle="bold" />
-
-                    <CheckBox
-                        android:id="@+id/dia"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@id/enter_schedule"
-                        android:text="@string/day"
-                        android:textColor="@color/black"
-                        android:textSize="13dp"
-                        android:textStyle="bold">
-
-                    </CheckBox>
-
-                    <CheckBox
-                        android:id="@+id/tarde"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@id/dia"
-                        android:text="Tarde"
-                        android:textColor="@color/black"
-                        android:textSize="13dp"
-                        android:textStyle="bold">
-                    </CheckBox>
-                    <CheckBox
-                        android:id="@+id/noche"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Noche"
-                        android:textColor="@color/black"
-                        android:textSize="13dp"
-                        android:textStyle="bold"
-                        android:layout_toRightOf="@id/tarde">
-                    </CheckBox>
-
+                        android:layout_alignParentRight="true"
+                        android:hint="Ingrese el dato"
+                        android:inputType="number|textEmailAddress" />
                 </RelativeLayout>
             </LinearLayout>
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp">
 
-                    <RadioGroup
-                        android:id="@+id/radio_grupo"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/enter_type"
-                            android:layout_width="139dp"
-                            android:layout_height="30dp"
-                            android:layout_alignParentBottom="true"
-                            android:text="Ingre el tipo"
-                            android:textColor="@color/black"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
 
-                        <RadioButton
-                            android:id="@+id/entrada"
-                            android:layout_width="96dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Entrada"
-                            android:textColor="@color/black"
-                            android:textSize="13dp"
-                            android:textStyle="bold" />
 
-                        <RadioButton
-                            android:layout_weight="1"
-                            android:id="@+id/plato_fuerte"
-                            android:layout_width="131dp"
-                            android:layout_height="match_parent"
-                            android:text="Plato fuerte"
-                            android:textColor="@color/black"
-                            android:textSize="13dp"
-                            android:textStyle="bold" />
-                    </RadioGroup>
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp">
-                    <TextView
-                        android:id="@+id/enter_time"
-                        android:layout_width="139dp"
-                        android:layout_height="30dp"
-                        android:layout_centerVertical="true"
-                        android:text="Preparación(m)"
-                        android:textColor="@color/black"
-                        android:textSize="15dp"
-                        android:textStyle="bold" />
-                    <NumberPicker
-                        android:id="@+id/number_piker"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@id/enter_time">
-                    </NumberPicker>
-                </RelativeLayout>
-            </LinearLayout>
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -186,11 +62,12 @@
 
                     <EditText
                         android:id="@+id/price"
-                        android:inputType="number|textEmailAddress"
-                        android:layout_width="192dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="210dp"
                         android:layout_height="45dp"
                         android:layout_alignParentRight="true"
-                        android:hint="Ingrese el dato" />
+                        android:hint="Ingrese el dato"
+                        android:inputType="number|textEmailAddress" />
                 </RelativeLayout>
             </LinearLayout>
             <LinearLayout
@@ -214,11 +91,12 @@
 
                     <EditText
                         android:id="@+id/ingredients"
-                        android:inputType="textNoSuggestions|textEmailAddress"
-                        android:layout_width="192dp"
+                        android:layout_width="207dp"
                         android:layout_height="45dp"
                         android:layout_alignParentRight="true"
-                        android:hint="Ingrese el dato" />
+                        android:layout_centerVertical="true"
+                        android:hint="Ingrese el dato"
+                        android:inputType="textNoSuggestions|textEmailAddress" />
                 </RelativeLayout>
 
             </LinearLayout>
@@ -230,6 +108,8 @@
                 android:paddingRight="16dp">
 
                 <Button
+                    android:id="@+id/upload_imagen"
+                    android:onClick="on_click"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/upload_image"/>
@@ -242,11 +122,14 @@
                 android:paddingRight="16dp"
                 android:orientation="horizontal">
                 <Button
+                    android:id="@+id/clear"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Limpiar"/>
                 <Button
+                    android:id="@+id/exit"
+                    android:onClick="button_exit"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -269,7 +152,8 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-                <ImageButton
+                <ImageView
+                    android:id="@+id/imagen_id"
                     android:layout_gravity="center_vertical"
                     android:layout_width="120dp"
                     android:layout_height="120dp"

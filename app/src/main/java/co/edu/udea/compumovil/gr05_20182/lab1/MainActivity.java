@@ -20,5 +20,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(imageButtonbutton);
             }
         });
+
+        ImageButton imageButtonbutton2 =  findViewById(R.id.buttom_drink);
+        imageButtonbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent imageButtonbutton2 = new Intent(MainActivity.this,DrinkActivity.class);
+                startActivity(imageButtonbutton2);
+            }
+        });
     }
 }

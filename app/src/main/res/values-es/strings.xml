@@ -2,8 +2,9 @@
     <string name="app_name">App Restaurante</string>
     <string name="welcome">Bienvenido</string>
     <string name="options">Ingrese una opcion</string>
-    <string name="options_food">Ingrese una comida</string>
+    <string name="options_food">Comida</string>
     <string name="upload_image">Subir imagen</string>
     <string name="save_data">Guardar dato</string>
     <string name="day">Día</string>
+    <string name="ingredients">Ingredientes</string>
 </resources>

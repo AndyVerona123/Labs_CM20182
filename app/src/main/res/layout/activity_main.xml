@@ -48,6 +48,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
                 <ImageButton
+                    android:id="@+id/buttom_drink"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:background="@color/backgroundcolor"
