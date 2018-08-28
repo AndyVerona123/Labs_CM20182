@@ -7,4 +7,13 @@
     <string name="save_data">Save data</string>
     <string name="title_activity_food">Food</string>
     <string name="day">Day</string>
+    <string name="option_food">Enter the food</string>
+    <string name="enter_schedule">Enter the schedule</string>
+    <string name="enter_type">Enter the type</string>
+    <string name="enter_time">Preparation</string>
+    <string name="enter_price">Price</string>
+    <string name="enter_ingredients">Ingredients</string>
+    <string name="Limpiar">Clear</string>
+    <string name="Salir">Exit</string>
+
 </resources>

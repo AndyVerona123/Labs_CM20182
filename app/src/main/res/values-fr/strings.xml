@@ -6,4 +6,11 @@
     <string name="upload_image">télécharger limage</string>
     <string name="save_data">enregistrer des données</string>
     <string name="day">Jour</string>
+    <string name="enter_schedule">Entrez l horaire</string>
+    <string name="enter_type">entrez le type</string>
+    <string name="enter_time">Preparation</string>
+    <string name="enter_price">prix</string>
+    <string name="enter_ingredients">Ingredients</string>
+    <string name="Limpiar">effacer</string>
+    <string name="Salir">sortir</string>
 </resources>
